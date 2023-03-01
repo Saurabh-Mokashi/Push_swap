@@ -12,7 +12,7 @@
 
 #include "push_swap.h"
 
-t_list	*relposratimes(int relpos, t_list *a, t_stackpos *positions)
+t_list	*relposratimes(int relpos, t_list *a)
 {
 	while (relpos)
 	{
@@ -22,7 +22,7 @@ t_list	*relposratimes(int relpos, t_list *a, t_stackpos *positions)
 	return (a);
 }
 
-t_list	*relposrratimes(int relpos, t_list *a, t_stackpos *positions)
+t_list	*relposrratimes(int relpos, t_list *a)
 {
 	while (relpos)
 	{

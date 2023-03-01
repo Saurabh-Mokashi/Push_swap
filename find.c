@@ -63,6 +63,7 @@ int	findrelpos(t_list *a, int val)
 			return (i);
 		a = a->next;
 	}
+	return (-1);
 }
 
 int	findmax(t_list *b, t_list *t)

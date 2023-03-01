@@ -82,11 +82,11 @@ void	fn(char *s, char c, char **str)
 char	**ft_split(char const *p, char c, int *cnt)
 {
 	char	**str;
-	int		i;
+	// int		i;
 	int		word;
 	char	*s;
 
-	i = 0;
+	// i = 0;
 	s = (char *)p;
 	if (!s)
 		return (NULL);

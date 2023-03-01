@@ -14,7 +14,7 @@
 SRCS = push_swap.c instructions_a.c instructions_b.c tog_instr.c ft_split.c\
 		misc.c multiparser.c postparser.c find.c delalloc.c \
 		instructions_a1.c instructions_b1.c sort.c misc2.c sort2.c misc3.c\
-		misc4.c
+		misc4.c temp.c
 
 OBJS = $(SRCS:.c=.o)
 

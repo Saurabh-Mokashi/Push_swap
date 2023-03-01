@@ -87,9 +87,9 @@ void	cf(t_list *a, t_list *b, int max, t_stackpos *p)
 	if (pos2 > (sz / 2))
 		pos2 = sz - pos2;
 	if (pos1 <= pos2)
-		a = relposratimes(pos1, a, p);
+		a = relposratimes(pos1, a);
 	else
-		a = relposrratimes(pos2, a, p);
+		a = relposrratimes(pos2, a);
 	p = pb(a, b, p);
 	a = p->a;
 	b = p->b;

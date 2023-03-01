@@ -95,9 +95,7 @@ int	postmparser(char **agv, int *temp, int ac)
 int	gotopost2(char **agv, int cnt, int *temp)
 {
 	char	**s;
-	int		i;
 
-	i = 0;
 	s = ft_split(agv[1], ' ', &cnt);
 	if (!post2parser(s, temp))
 	{
@@ -110,8 +108,6 @@ int	gotopost2(char **agv, int cnt, int *temp)
 
 int	postparser(int *temp, char **agv, int ac, int cnt)
 {
-	char	**s;
-
 	if (ac == 2)
 	{
 		return (gotopost2(agv, cnt, temp));

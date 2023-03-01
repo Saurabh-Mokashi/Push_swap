@@ -29,12 +29,12 @@ int	ft_size(t_list *t)
 	return (sz);
 }
 
-int	iswhitespace(char c)
-{
-	if (c == ' ' || c == '\t' || c == '\r' || c == '\n' \
-			||c == '\v' || c == '\f')
-		return (1);
-}
+// int	iswhitespace(char c)
+// {
+// 	if (c == ' ' || c == '\t' || c == '\r' || c == '\n' 
+// 			||c == '\v' || c == '\f')
+// 		return (1);
+// }
 
 int	ft_issign(char c)
 {
@@ -50,16 +50,16 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-int	ft_error(int *temp)
+int	ft_error(int *temp,int cnt)
 {
 	int	i;
 	int	j;
 
 	i = 0;
-	while (temp[i])
+	while (i<cnt)
 	{
 		j = i + 1;
-		while (temp[j])
+		while (j<cnt)
 		{
 			if (temp[i] == temp[j])
 				return (1);

@@ -57,6 +57,7 @@ void	main1(int *del, int *temp, int cnt)
 	t_list	*a;
 
 	i = 0;
+	a = NULL;
 	while (i < cnt)
 	{
 		j = 0;
@@ -88,7 +89,7 @@ void	main0(int ac, char **agv, int cnt, int *del)
 		write (2, "Error\n", 6);
 		return ;
 	}
-	if (!errorandsort(temp))
+	if (!errorandsort(temp,cnt))
 	{
 		free(temp);
 		return ;
@@ -108,6 +109,7 @@ int	main(int ac, char **agv)
 	int			*del;
 
 	cnt = 0;
+	del = NULL;
 	if (ac == 1)
 		return (0);
 	if (!multiparser(agv, ac, &cnt))
@@ -115,5 +117,6 @@ int	main(int ac, char **agv)
 		write(2, "Error\n", 6);
 		return (0);
 	}
+	// printf("%d",cnt);
 	main0(ac, agv, cnt, del);
 }

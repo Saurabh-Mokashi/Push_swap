@@ -45,3 +45,29 @@ void	displaydll(t_list *p)
 	printf("\n");
 	return ;
 }
+
+// int ft_s(int *t)
+// {
+// 	int	i;
+
+// 	i = 0;
+// 	while(t[i])
+// 		i++;
+// 	return i;
+// }
+
+void d(int *t)
+{
+	int	i;
+
+	i = 0;
+	// return ;
+	while (t[i])
+	{
+		printf("%d ", t[i]);
+		i++;
+		if(!t[i])
+			break;
+	}
+	printf("\n");
+}

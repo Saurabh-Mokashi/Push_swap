@@ -119,10 +119,9 @@ int	goto2(char **agv, int *cnt, int j)
 {
 	char	**s;
 	int		k;
-	int		i;
 
-	i = 0;
 	s = ft_split(agv[1], ' ', cnt);
+	k = 0;
 	if (!multi2parser(s, j, k))
 	{
 		splfree(s);
@@ -136,6 +135,7 @@ int	multiparser(char **agv, int ac, int *cnt)
 {
 	int		j;
 
+	j = 0;
 	if (ac == 2)
 	{
 		return (goto2(agv, cnt, j));

@@ -49,20 +49,21 @@ void	maxlen(t_list *a, t_list *b, t_stackpos *positions)
 		ele = findmax(a, a);//or min jst check
 		relpos = findrelpos(a, ele);
 		if (relpos > (ft_size(a) / 2))
-			a = relposrratimes(relpos, a, positions);
+			a = relposrratimes(relpos, a);
 		else
-			a = relposratimes(relpos, a, positions);
+			a = relposratimes(relpos, a);
 		positions = pb(a, b, positions);
 		a = positions->a;
 		b = positions->b;
 	}
 }
 
-void	minmaxmanip(int *min, int *max, int chunksz, int len)
+int	minmaxmanip(int *min, int *max, int chunksz, int len)
 {
 	min = max;
 	if (*max + chunksz < len)
 		*max = *max + chunksz;
 	else
 		*max = len;
+	return (*min);
 }

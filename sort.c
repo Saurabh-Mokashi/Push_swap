@@ -39,7 +39,7 @@ void	bigsort(t_list *a, t_list *b, t_stackpos *positions)
 		}
 		if (hold_fs(a, max))
 		{
-			minmaxmanip(&min, &max, chunksz, len);
+			min = minmaxmanip(&min, &max, chunksz, len);
 			continue ;
 		}
 		cf(a, b, max, positions);
@@ -76,9 +76,9 @@ void	checkandsort(t_list *a, t_list *b, int len, t_stackpos *positions)
 	ft_free(a);
 }
 
-int	errorandsort(int *temp)
+int	errorandsort(int *temp,int cnt)
 {
-	if (ft_error(temp))
+	if (ft_error(temp,cnt))
 	{
 		write (2, "Error\n", 6);
 		return (0);
