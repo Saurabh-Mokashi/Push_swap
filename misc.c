@@ -50,16 +50,16 @@ int	ft_isdigit(int c)
 	return (0);
 }
 
-int	ft_error(int *temp,int cnt)
+int	ft_error(int *temp, int cnt)
 {
 	int	i;
 	int	j;
 
 	i = 0;
-	while (i<cnt)
+	while (i < cnt)
 	{
 		j = i + 1;
-		while (j<cnt)
+		while (j < cnt)
 		{
 			if (temp[i] == temp[j])
 				return (1);

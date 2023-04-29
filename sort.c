@@ -76,9 +76,9 @@ void	checkandsort(t_list *a, t_list *b, int len, t_stackpos *positions)
 	ft_free(a);
 }
 
-int	errorandsort(int *temp,int cnt)
+int	errorandsort(int *temp, int cnt)
 {
-	if (ft_error(temp,cnt))
+	if (ft_error(temp, cnt))
 	{
 		write (2, "Error\n", 6);
 		return (0);
