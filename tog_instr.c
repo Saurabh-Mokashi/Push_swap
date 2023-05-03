@@ -46,8 +46,8 @@ t_list	*abinit(int *temp, int cnt, t_list *a)
 	int		i;
 
 	a = newdll(temp[0]);
-	a->next = a;//NULL
-	a->prev = a;//NULL
+	a->next = a;
+	a->prev = a;
 	b = a;
 	i = 1;
 	while (i < cnt)

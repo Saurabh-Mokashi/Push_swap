@@ -46,7 +46,7 @@ void	maxlen(t_list *a, t_list *b, t_stackpos *positions)
 
 	while (a)
 	{
-		ele = findmax(a, a);//or min jst check
+		ele = findmax(a, a);
 		relpos = findrelpos(a, ele);
 		if (relpos > (ft_size(a) / 2))
 			a = relposrratimes(relpos, a);
