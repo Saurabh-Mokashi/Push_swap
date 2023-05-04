@@ -21,20 +21,20 @@ void	sa(t_list	*top)
 	temp = top->val;
 	top->val = top->next->val;
 	top->next->val = temp;
-	printf("sa\n");
+	ft_printf("sa\n");
 }
 
 t_list	*ra(t_list	*a)
 {
 	a = a->next;
-	printf("ra\n");
+	ft_printf("ra\n");
 	return (a);
 }
 
 t_list	*rra(t_list *a)
 {
 	a = a->prev;
-	printf("rra\n");
+	ft_printf("rra\n");
 	return (a);
 }
 
@@ -42,7 +42,7 @@ t_stackpos	*posmanipa(t_stackpos *positions, t_list *a, t_list *b)
 {
 	positions->a = a;
 	positions->b = b;
-	printf("pa\n");
+	ft_printf("pa\n");
 	return (positions);
 }
 
@@ -74,18 +74,3 @@ t_stackpos	*pa(t_list	*a, t_list	*b, t_stackpos	*positions)
 		free(t);
 	return (posmanipa(positions, a, b));
 }
-	// positions->a = a;
-	// positions->b = b;
-	// printf("pa\n");
-
-// if (b == t)
-// 	{
-// 		free(b);
-// 		b = NULL;
-// 	}
-// 	else
-// 		free(t);
-// 	positions->a = a;
-// 	positions->b = b;
-// 	printf("pa\n");
-// 	return (positions);

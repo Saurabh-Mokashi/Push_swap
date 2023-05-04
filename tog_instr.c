@@ -22,21 +22,21 @@ void	ss(t_list	*a, t_list	*b)
 	temp = b->val;
 	b->val = b->next->val;
 	b->next->val = temp;
-	printf("ss\n");
+	ft_printf("ss\n");
 }
 
 void	rr(t_list	*a, t_list	*b, t_stackpos	*positions)
 {
 	positions->a = a->next;
 	positions->b = b->next;
-	printf("rr\n");
+	ft_printf("rr\n");
 }
 
 void	rrr(t_list *a, t_list *b, t_stackpos *positions)
 {
 	positions->a = a->prev;
 	positions->b = b->prev;
-	printf("rrr\n");
+	ft_printf("rrr\n");
 }
 
 t_list	*abinit(int *temp, int cnt, t_list *a)

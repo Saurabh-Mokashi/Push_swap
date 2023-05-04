@@ -21,20 +21,20 @@ void	sb(t_list	*top)
 	temp = top->val;
 	top->val = top->next->val;
 	top->next->val = temp;
-	printf("sb\n");
+	ft_printf("sb\n");
 }
 
 t_list	*rb(t_list	*b)
 {
 	b = b->next;
-	printf("rb\n");
+	ft_printf("rb\n");
 	return (b);
 }
 
 t_list	*rrb(t_list	*b)
 {
 	b = b->prev;
-	printf("rrb\n");
+	ft_printf("rrb\n");
 	return (b);
 }
 
@@ -42,7 +42,7 @@ t_stackpos	*posmanipb(t_stackpos *positions, t_list *a, t_list *b)
 {
 	positions->a = a;
 	positions->b = b;
-	printf("pb\n");
+	ft_printf("pb\n");
 	return (positions);
 }
 
@@ -74,6 +74,3 @@ t_stackpos	*pb(t_list *a, t_list *b, t_stackpos *positions)
 		free(t);
 	return (posmanipb(positions, a, b));
 }
-	// positions->a = a;
-	// positions->b = b;
-	// printf("pb\n");

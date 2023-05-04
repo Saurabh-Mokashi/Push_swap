@@ -19,10 +19,10 @@ void	display(int	*s, int sz)
 	i = 0;
 	while (i < sz)
 	{
-		printf("%d ", s[i]);
+		ft_printf("%d ", s[i]);
 		i++;
 	}
-	printf("\n");
+	ft_printf("\n");
 }
 
 void	displaydll(t_list *p)
@@ -31,30 +31,20 @@ void	displaydll(t_list *p)
 
 	if (!p)
 	{
-		printf("\n");
+		ft_printf("\n");
 		return ;
 	}
 	num = p->val;
-	printf("\n%d ", num);
+	ft_printf("\n%d ", num);
 	p = p->next;
 	while (p && p->val != num)
 	{
-		printf("%d ", p->val);
+		ft_printf("%d ", p->val);
 		p = p->next;
 	}
-	printf("\n");
+	ft_printf("\n");
 	return ;
 }
-
-// int ft_s(int *t)
-// {
-// 	int	i;
-
-// 	i = 0;
-// 	while(t[i])
-// 		i++;
-// 	return i;
-// }
 
 void	d(int *t)
 {
@@ -63,10 +53,10 @@ void	d(int *t)
 	i = 0;
 	while (t[i])
 	{
-		printf("%d ", t[i]);
+		ft_printf("%d ", t[i]);
 		i++;
 		if (!t[i])
 			break ;
 	}
-	printf("\n");
+	ft_printf("\n");
 }
