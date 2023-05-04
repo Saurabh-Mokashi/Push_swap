@@ -15,7 +15,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-
+# define MORE 2147483650
 typedef struct t_list
 {
 	int				val;

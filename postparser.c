@@ -29,6 +29,8 @@ long	numcalc(char **s, int j)
 			k++;
 		}
 		num = num * 10 + (s[j][k] - '0');
+		if (num < 0)
+			return ((long) MORE);
 		k++;
 	}
 	return ((long)(num * sign));

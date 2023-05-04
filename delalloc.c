@@ -26,11 +26,11 @@ void	delalloc(int *del, int *temp, int cnt)
 
 void	swapping(int *del, int i, int pos, int low)
 {
-	int	yo;
+	int	t;
 
-	yo = del[i];
+	t = del[i];
 	del[i] = low;
-	del[pos] = yo;
+	del[pos] = t;
 }
 
 void	delallocmanip(int *del, int *temp, int cnt)

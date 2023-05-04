@@ -89,7 +89,7 @@ void	main0(int ac, char **agv, int cnt, int *del)
 		write (2, "Error\n", 6);
 		return ;
 	}
-	if (!errorandsort(temp, cnt))
+	if (!errorandsort(temp, cnt) || cnt == 0)
 	{
 		free(temp);
 		return ;
