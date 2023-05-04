@@ -29,7 +29,7 @@ long	numcalc(char **s, int j)
 			k++;
 		}
 		num = num * 10 + (s[j][k] - '0');
-		if (num < 0)
+		if (k > 11)
 			return ((long) MORE);
 		k++;
 	}
