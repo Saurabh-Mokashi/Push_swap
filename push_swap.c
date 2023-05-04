@@ -12,31 +12,6 @@
 
 #include "push_swap.h"
 
-// void anotempty(t_list *a, t_list *b, t_stackpos *positions, int len)
-// {
-// 	t_list	*hold_first;
-// 	t_list	*hold_second;
-
-// 	while (ft_size(a) != 0)
-// 	{
-// 		if (max == len)
-// 		{
-// 			maxlen(a, b, positions);
-// 			break ;
-// 		}
-// 		hold_first = findnuminrange(a, max);
-// 		hold_second = findnumrev(a->prev, max);
-// 		if (!hold_first && !hold_second)//or ||, idk
-// 		{
-// 			minmaxmanip(&min, &max, chunksz, len);
-// 			continue ;
-// 		}
-// 		carryforward(a, b, hold_first, hold_second, positions);
-// 		a = positions->a;
-// 		b = positions->b;
-// 	}
-// }
-
 void	main2(t_list *a)
 {
 	t_stackpos	*positions;

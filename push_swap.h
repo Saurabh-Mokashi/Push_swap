@@ -17,6 +17,7 @@
 # include <unistd.h>
 # include "ft_printf/ft_printf.h"
 # define MORE 2147483650
+
 typedef struct t_list
 {
 	int				val;

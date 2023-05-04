@@ -29,13 +29,6 @@ int	ft_size(t_list *t)
 	return (sz);
 }
 
-// int	iswhitespace(char c)
-// {
-// 	if (c == ' ' || c == '\t' || c == '\r' || c == '\n' 
-// 			||c == '\v' || c == '\f')
-// 		return (1);
-// }
-
 int	ft_issign(char c)
 {
 	if (c == '-' || c == '+')

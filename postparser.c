@@ -70,30 +70,6 @@ int	postmparser(char **agv, int *temp, int ac)
 	return (1);
 }
 
-		// s = ft_split(agv[1], ' ', &cnt);
-		// j = 0;
-		// k = 0;
-		// while (s[j] != NULL)
-		// {
-		// 	while (s[j][k] != '\0')
-		// 	{
-		// 		if (s[j][k] == '+' || s[j][k] == '-')
-		// 		{
-		// 			if (s[j][k] == '-')
-		// 				sign = -1;
-		// 			k++;
-		// 		}
-		// 		num = num * 10 + (s[j][k] - '0');
-		// 		k++;
-		// 	}
-		// 	if ((long)num * sign > 2147483647 || (long)num * sign < -2147483648)
-		// 		return (0);
-		// 	temp[j] = (int)(num * sign);
-		// 	num = 0;
-		// 	j++;
-		// 	sign = 1;
-		// 	k = 0;
-		// }
 int	gotopost2(char **agv, int cnt, int *temp)
 {
 	char	**s;
