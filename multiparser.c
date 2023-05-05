@@ -104,7 +104,7 @@ int	multiparser(char **agv, int ac, int *cnt)
 		s = concatandsplit(agv,ac,cnt);
 		if (!multimparser(ac, j, cnt, s))
 		{
-			ft_printf("cnt val is %d\n",*cnt);
+			// ft_printf("cnt val is %d\n",*cnt);
 			splfree(s);
 			return (0);
 		}
