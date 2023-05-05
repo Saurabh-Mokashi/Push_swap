@@ -98,9 +98,10 @@ int	postparser(int *temp, char **agv, int ac, int cnt)
 		s = concatandsplit(agv, ac, &j);
 		if (!postmparser(s, temp, cnt))
 		{
-			free(s);
+			splfree(s);
 			return (0);
 		}
 	}
+	splfree(s);
 	return (1);
 }

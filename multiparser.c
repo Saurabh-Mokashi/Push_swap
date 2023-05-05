@@ -105,11 +105,11 @@ int	multiparser(char **agv, int ac, int *cnt)
 		if (!multimparser(ac, j, cnt, s))
 		{
 			ft_printf("cnt val is %d\n",*cnt);
-			free(s);
+			splfree(s);
 			return (0);
 		}
 	}
-	free(s);
+	splfree(s);
 	// ft_printf("cnt val is %d\n",*cnt);
 	return (1);
 }
@@ -148,6 +148,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	while (s2[r] != '\0')
 		str[i++] = s2[r++];
 	str[i] = '\0';
+	if(ft_strlen(s1) > 0)
+		free((char*)s1);
+	// ft_printf("l val is %d\n",l);
 	return (str);
 }
 
@@ -162,7 +165,9 @@ char	**concatandsplit(char **agv, int ac, int *cnt)
 	while (i < ac)
 	{
 		str = ft_strjoin(str, agv[i]);
+		// ft_printf("hi\n");
 		str = ft_strjoin(str, (char *)" ");
+		// ft_printf("bye\n");
 		i++;
 	}
 	// ft_printf("Str now is %s\n",str);
