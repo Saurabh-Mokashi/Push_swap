@@ -55,8 +55,6 @@ void	d(int *t)
 	{
 		ft_printf("%d ", t[i]);
 		i++;
-		if (!t[i])
-			break ;
 	}
 	ft_printf("\n");
 }

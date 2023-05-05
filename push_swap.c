@@ -64,6 +64,14 @@ void	main0(int ac, char **agv, int cnt, int *del)
 		write (2, "Error\n", 6);
 		return ;
 	}
+	// int	i;
+
+	// i = 0;
+	// while (i < cnt)
+	// {
+	// 	ft_printf("%d ", temp[i]);
+	// 	i++;
+	// }
 	if (!errorandsort(temp, cnt) || cnt == 0)
 	{
 		free(temp);

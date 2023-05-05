@@ -34,8 +34,10 @@ int	multimparser(int ac, int j, int *cnt, char **agv)
 {
 	int		i;
 
-	i = 1;
-	while (i < ac)
+	i = 0;
+	(void) ac;
+	// ft_printf("first %s",agv[0]);
+	while (i < *cnt)
 	{
 		j = 0;
 		while (agv[i][j] != '\0')
@@ -52,8 +54,9 @@ int	multimparser(int ac, int j, int *cnt, char **agv)
 			j++;
 		}
 		i++;
-		(*cnt)++;
+		// (*cnt)++;
 	}
+	// ft_printf("hi\n");
 	return (1);
 }
 
@@ -98,14 +101,16 @@ int	multiparser(char **agv, int ac, int *cnt)
 	}
 	else
 	{
-		s = concatandsplit(agv,ac);
+		s = concatandsplit(agv,ac,cnt);
 		if (!multimparser(ac, j, cnt, s))
 		{
+			ft_printf("cnt val is %d\n",*cnt);
 			free(s);
 			return (0);
 		}
 	}
 	free(s);
+	// ft_printf("cnt val is %d\n",*cnt);
 	return (1);
 }
 
@@ -146,7 +151,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (str);
 }
 
-char	**concatandsplit(char **agv, int ac)
+char	**concatandsplit(char **agv, int ac, int *cnt)
 {
 	char	*str;
 	char	**s;
@@ -158,10 +163,11 @@ char	**concatandsplit(char **agv, int ac)
 	{
 		str = ft_strjoin(str, agv[i]);
 		str = ft_strjoin(str, (char *)" ");
-		ft_printf("Str now is %s\n",str);
 		i++;
 	}
-	s = ft_split(str, ' ', &i);
+	// ft_printf("Str now is %s\n",str);
+	s = ft_split(str, ' ', cnt);
+	// ft_printf("cnt is %d\n",*cnt);
 	free(str);
 	return (s);
 }

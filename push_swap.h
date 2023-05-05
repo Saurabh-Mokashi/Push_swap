@@ -103,7 +103,7 @@ int			minmaxmanip(int *min, int *max, int chunksz, int len);
 void		cf(t_list *a, t_list *b, int max, t_stackpos *p);
 int			getmindist(t_list *a);
 void		sort5cont(t_list *a, t_list *b, t_stackpos *positions);
-char		**concatandsplit(char **agv, int ac);
+char		**concatandsplit(char **agv, int ac, int *cnt);
 char		*ft_strjoin(char const *s1, char const *s2);
 size_t		ft_strlen(const char *str);
 
