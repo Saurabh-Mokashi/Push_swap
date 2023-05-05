@@ -86,8 +86,8 @@ int	gotopost2(char **agv, int cnt, int *temp)
 
 int	postparser(int *temp, char **agv, int ac, int cnt)
 {
-	char **s;
-	int j;
+	char	**s;
+	int		j;
 
 	if (ac == 2)
 	{
